@@ -1,0 +1,60 @@
+/* Ajustements supplémentaires pour la barre de navigation */
+.navbar-nav .nav-link{
+  color: white;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  background: rgb(146,94,39);
+  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);
+  border-radius: 5px;
+  color: black;
+}
+.navbar-nav .nav-link .active{
+  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);
+  color: white;
+}
+.offcanvas{
+  z-index: 1050;
+  width: 30px;
+}
+header img{
+  height: 40px;
+}
+.navbar-toggler{
+  color: black;
+  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);   
+}
+
+.container{
+  margin-top: 5em;
+}
+.fade-in {
+  -webkit-animation-name: fadeInOpacity;
+          animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
