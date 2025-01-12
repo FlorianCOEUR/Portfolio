@@ -4,29 +4,36 @@
   padding: 10px;
   transition: background-color 0.3s;
 }
+.nav-link{
+  position: relative;
+}
+.nav-link::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
 
-.navbar-nav .nav-link:hover {
-  background: rgb(146,94,39);
-  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.nav-link::before {
+  content: " ";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);  
+  z-index: -1;
+  transition: transform .3s ease;
   border-radius: 5px;
-  color: black;
 }
-.navbar-nav .nav-link .active{
-  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);
-  color: white;
-}
-.offcanvas{
+#offcanvasNavbar{
   z-index: 1050;
-  width: 30px;
+  width: 33vh;
 }
 header img{
   height: 40px;
 }
-.navbar-toggler{
-  color: black;
-  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);   
-}
-
 .container{
   margin-top: 5em;
 }
