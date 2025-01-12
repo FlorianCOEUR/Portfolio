@@ -28,7 +28,8 @@ border-radius: 20px;
   content: " ";
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background: linear-gradient(to bottom right, rgba(1, 0, 15,0.5) 0%, rgba(80, 12, 69,0.5) 50%, rgba(11, 1, 248,0.5) 100%);  
+  /* background: linear-gradient(to bottom right, rgba(1, 0, 15,0.5) 0%, rgba(80, 12, 69,0.5) 50%, rgba(11, 1, 248,0.5) 100%);   */
+  background-color: #0F0620;
   z-index: -1;
   transition: transform .3s ease;
   border-radius: 5px;
@@ -77,6 +78,7 @@ header img{
 .apropos img{
   height: 500px;
   text-align: center;
+  border-radius: 20px;
 
 }
 /* Ajout d'un marge top sur petit écran */
