@@ -1,6 +1,10 @@
 /* Ajustements supplémentaires pour la barre de navigation */
+.navbar{
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 20px;
+}
 .navbar-nav .nav-link{
-  color: white;
+  color: #0F0620;
   padding: 10px;
   transition: background-color 0.3s;
 }
@@ -11,7 +15,9 @@
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-
+.nav-link:hover{
+  color: white;
+}
 .nav-link:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -22,7 +28,7 @@
   content: " ";
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
-  background: linear-gradient(90deg, rgba(146,94,39,1) 0%, rgba(243,234,155,1) 50%, rgba(146,94,39,1) 100%);  
+  background: linear-gradient(to bottom right, rgba(1, 0, 15,0.5) 0%, rgba(80, 12, 69,0.5) 50%, rgba(11, 1, 248,0.5) 100%);  
   z-index: -1;
   transition: transform .3s ease;
   border-radius: 5px;
@@ -34,9 +40,12 @@
 header img{
   height: 40px;
 }
+
 .container{
-  margin-top: 5em;
+  height: 100vh;
+  color: white;
 }
+
 .fade-in {
   -webkit-animation-name: fadeInOpacity;
           animation-name: fadeInOpacity;
@@ -64,4 +73,25 @@ header img{
   100% {
     opacity: 1;
   }
+}
+.apropos img{
+  height: 500px;
+  text-align: center;
+
+}
+/* Ajout d'un marge top sur petit écran */
+@media(max-width: 768px){
+  .apropos{
+    margin-top: 100px;
+  }
+  .apropos .text{
+    margin-top: 20px;
+  }
+}
+body{
+  background-image: url(images/YvUPGUK.jpeg);
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }

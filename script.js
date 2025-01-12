@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
       loadContent(file);
   
       // Met à jour le lien actif
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
-      });
+      // document.querySelectorAll('.nav-link').forEach(link => {
+      //   link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
+      // });
     }
   
     // Écoute des clics sur les liens pour mettre à jour l'URL
