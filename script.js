@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loadContent(file);
   
       // Met à jour le lien actif
-      // document.querySelectorAll('.nav-link').forEach(link => {
-      //   link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
+      //  document.querySelectorAll('.nav-link').forEach(link => {
+      //    link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
       // });
     }
   
@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const hash = link.getAttribute('href').substring(1); // Récupère le hash sans le #
         history.pushState(null, '', `#${hash}`); // Met à jour l'URL
         loadContent(file); // Charge le contenu
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
+        });
       });
     });
   
