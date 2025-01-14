@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       const file = pageMap[hash] || 'accueil.html'; // Par défaut, charge "accueil.html"
       loadContent(file);
-  
+      
       // Met à jour le lien actif
         document.querySelectorAll('.nav-link').forEach(link => {
           link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
