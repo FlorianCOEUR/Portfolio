@@ -23,58 +23,14 @@ margin: 0 auto;
 .navbar .nav-item .active:hover{
   border:none;
 }
-/* .navbar .nav-item .active::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
+header img{
+  height: 40px;
 }
-.navbar .nav-item .active:hover{
-  color: #0F0620 ;
-  z-index: 1000;
-}
-.navbar .nav-item .active:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
-.navbar .nav-item .active::before {
-  content: " ";
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-color: white;
-  z-index: -1;
-  transition: transform .3s ease;
-  border-radius: 5px;
-}
-.nav-link::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-.nav-link:hover{
-  color: white;
-}
-.nav-link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
-.nav-link::before {
-  content: "";
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-color: #0F0620;
-  z-index: -1;
-  transition: transform .3s ease;
-  border-radius: 5px;
-}   */
 /* background: linear-gradient(to bottom right, rgba(1, 0, 15,0.5) 0%, rgba(80, 12, 69,0.5) 50%, rgba(11, 1, 248,0.5) 100%);   */
 #offcanvasNavbar{
   z-index: 1050;
 }
-header img{
-  height: 40px;
-}/* Style pour le body */
+/* Style pour le body */
 body{
   background-image: url(images/YvUPGUK.jpeg);
   place-items: center;
@@ -87,6 +43,36 @@ body{
 #hero{
   background-size:cover;
   background-position: center;
+}
+/* Effet de fon lors des chargement du contenu */
+
+.fade-in {
+  -webkit-animation-name: fadeInOpacity;
+          animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .about img{
   height: 60vh;
