@@ -31,9 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageMap = {
       accueil: 'accueil.html',
       apropos: 'apropos.html',
-      cv: 'cv.html',
-      projets: 'projets.html',
+      skills: 'skills.html',
+      projects: 'projects.html',
       contact: 'contact.html',
+      formations: 'formation.html'
     };
 
     const file = pageMap[hash] || 'accueil.html'; // Par défaut, charge "accueil.html"
