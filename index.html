@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1955e4074.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,27 +20,27 @@
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <i class="fa-solid fa-bars" style="color: white;"></i>
+                    </button>
                 <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex ">
                         <li class="nav-item shake-bottom">
-                            <a href="#accueil" class="nav-link link-dyna " data-file="accueil.html">Accueil</a>
+                            <a href="#accueil" class="nav-link" data-file="accueil.html">Accueil</a>
                         </li>
                         <li class="nav-item shake-bottom">
-                            <a href="#apropos" class="nav-link link-dyna" data-file="apropos.html" >À propos</a>
+                            <a href="#apropos" class="nav-link" data-file="apropos.html" >À propos</a>
                         </li>
                         <li class="nav-item shake-bottom">
-                            <a href="#formations" class="nav-link link-dyna" data-file="formation.html">Formations</a>
+                            <a href="#formations" class="nav-link" data-file="formation.html">Formations</a>
                         </li>
                         <li class="nav-item shake-bottom">
-                            <a href="#skills" class="nav-link link-dyna" data-file="skills.html">Compétences</a>
+                            <a href="#skills" class="nav-link" data-file="skills.html">Compétences</a>
                         </li>
                         <li class="nav-item shake-bottom">
-                            <a href="#projects" class="nav-link link-dyna" data-file="projects.html">Projets</a>
+                            <a href="#projects" class="nav-link" data-file="projects.html">Projets</a>
                         </li>
                         <li class="nav-item shake-bottom">
-                            <a href="javascript:void(0)" class="nav-link" id="contact-link">Contact</a>
+                            <a href="#contact" class="nav-link" data-file="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +50,8 @@
         <div class="offcanvas offcanvas-start  fixed-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.png" alt="logo"></h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-regular fa-circle-xmark" style="color: aliceblue;"></i></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-start flex-grow-1">
@@ -69,7 +71,7 @@
                         <a href="#projects" class="nav-link" data-file="projects.html">Projets</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link" >Contact</a>
+                        <a href="#contact" class="nav-link" data-file="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
