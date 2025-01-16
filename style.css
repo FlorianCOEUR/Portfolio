@@ -187,29 +187,32 @@ footer{
   }
 }
 
-/* Cursor */
-.cursor{
-  position: relative;
-  width: 180px;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 30px;
-  text-align: center;
+.anim {
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+#formations h1{
+  font-size: 40px;
+}
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);    
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
 }
-/* Animation */
-.typewriter-animation {
-animation: 
-  typewriter 1s steps(50) 1s 1 normal both, 
-  blinkingCursor 250ms steps(50) infinite normal;
+
+@keyframes typing {
+  from {
+    width: 0
+  }
 }
-@keyframes typewriter {
-from { width: 0; }
-to { width: 150px; }
-}
-@keyframes blinkingCursor{
-from { border-right-color: rgba(255,255,255,.75); }
-to { border-right-color: transparent; }
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
