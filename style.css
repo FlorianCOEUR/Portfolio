@@ -192,16 +192,29 @@ main{
   display: grid;
   place-items: center;
 }
-.typing-demo {
-  width: 22ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+.typing{
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
 }
-
+#hero .typing {
+  width: 8ch;
+  animation: typing 1s steps(8), blink .5s step-end infinite alternate;
+}
+#formations .typing{
+  width: 14ch;
+  animation: typing 1s steps(14), blink .5s step-end infinite alternate;
+}
+#skills .typing{
+  width: 11ch;
+  animation: typing 1s steps(11), blink .5s step-end infinite alternate;
+}
+#contact .typing{
+  width: 7ch;
+  animation: typing 1s steps(7), blink .5s step-end infinite alternate;
+}
 @keyframes typing {
   from {
     width: 0
