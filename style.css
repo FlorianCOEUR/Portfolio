@@ -92,9 +92,7 @@ body{
 #skills .progress-bar-custom{
   background-image: linear-gradient(to right, #0b01f8, #500c45,  #01000f);
 }
-#skills .container{
-  width: 80em;
-}
+
 @media (max-width: 992px) {
   main #projects{
     margin-top: 100px;
