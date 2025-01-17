@@ -33,20 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
       apropos: 'apropos.html',
       skills: 'skills.html',
       projects: 'projects.html',
-      formations: 'formation.html'
+      formations: 'formation.html',
+      contact: 'contact.html'
     };
 
     const file = pageMap[hash] || 'accueil.html'; // Par défaut, charge "accueil.html"
     loadContent(file);
 
     // Met à jour le lien actif
-    document.querySelectorAll('.link-dyna').forEach(link => {
+    document.querySelectorAll('.nav-link').forEach(link => {
       link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
     });
   }
 
   // Écoute des clics sur les liens pour mettre à jour l'URL
-  document.querySelectorAll('.link-dyna').forEach(link => {
+  document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault(); // Empêche le rechargement de la page
       const hash = link.getAttribute('href').substring(1); // Récupère le hash sans le #
@@ -54,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       history.pushState(null, '', `#${hash}`); // Met à jour l'URL
       loadContent(file); // Charge le contenu
-      document.querySelectorAll('.link-dyna').forEach(link => {
+      document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.toggle('active', link.getAttribute('href') === `#${hash}`);
       });
     });
