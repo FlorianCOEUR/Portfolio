@@ -47,8 +47,11 @@ body{
 }
 /* Style pour le hero */
 #hero{
-  background-size:cover;
-  background-position: center;
+  height: 80vh;
+  margin-top: 20px;
+}
+#hero .container, #hero .container>div{
+  height: 100%;
 }
 
 /* Effet de fon lors des chargement du contenu */
